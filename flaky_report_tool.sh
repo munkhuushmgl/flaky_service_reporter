@@ -27,7 +27,7 @@ function flaky_tester_2 {
   echo $LINE
   while [[ $COUNTER -lt $MAX_RUN_LIMIT ]]
   do
-    OUTPUT=$(python3.8 -m pytest $INPUT_TEST_FILE)
+    OUTPUT=$(python3 -m pytest $INPUT_TEST_FILE)
     ANY_FAILURE='FAILURES'
     if [[ "$OUTPUT" == *"$ANY_FAILURE"* ]]; then
       echo "Failed at ==> $COUNTER" >> $OUTPUT_FILE

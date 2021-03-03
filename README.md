@@ -5,7 +5,7 @@
 
 ## Python directory
 
-Currently, python directory has test and sample which 
+Currently, python directory has test and sample which
 fails one out of ten times randomly to produce the flakiness.
 
 ### Prerequisites
@@ -24,3 +24,35 @@ Install python dependencies
 pip install -r requirements.txt
 
 ```
+
+## Before you begin
+
+### Supported Python Versions
+
+Python >= 3.6
+
+1. pip install pytest
+1. pip install -r requirements.txt (if it is ML APIs repo)
+
+## Using the shell script
+
+* make bash script file executable
+
+    ```
+    chmod +x flaky_report_tool.sh
+    ```
+
+* execute the script in context to make available for usage
+
+    ```
+    source flaky_report_tool.sh 
+    ```
+
+* call bash function with **flaky_tester** *python_test_file_test.py* *output_file_path.txt*
+
+1. Python test file path (required)
+2. Output text file (optional)
+
+    ```
+    source flaky_report_tool.sh python/fake_quickstart_test.py output_text.txt
+    ```
