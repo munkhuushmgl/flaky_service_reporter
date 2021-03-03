@@ -18,7 +18,7 @@ You will need to set up the local development environment by
 Install python dependencies
 
 ```code
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 
 ```
 
@@ -28,8 +28,8 @@ pip install -r requirements.txt
 
 Python >= 3.6
 
-1. pip install pytest
-1. pip install -r requirements.txt (if it is ML APIs repo)
+1. pip3 install pytest
+1. pip3 install -r requirements.txt (if it is ML APIs repo)
 
 ## Using the shell script
 
